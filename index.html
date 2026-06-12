@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" class="stylesheet" />
+    <title>Food Pyramid</title>
+  </head>
+  <body>
+    <header>
+      <div class="profile-toggle">
+        <input type="radio" id="p1" name="profile" value="child1to4" />
+        <label for="p1">Ages 1-4</label>
+
+        <input type="radio" id="p2" name="profile" value="child5plus" />
+        <label for="p2">Ages 5+</label>
+      </div>
+      <h1>Food Diary</h1>
+      <div class="date-wrap">
+        <label for="day">Date:</label>
+        <input id="day" class="date-input" type="date" />
+      </div>
+    </header>
+    <main class="pyramid">
+      <div class="shelf s1" data-shelf="processed">
+        <span class="badge">0</span>
+        <div class="callout">
+          Foods &amp; drinks high in fat, sugar &amp; salt
+        </div>
+
+        <div class="controls" role="group">
+          <button class="control-btn dec" type="button">−</button>
+          <button class="control-btn inc" type="button">+</button>
+        </div>
+      </div>
+      <div class="gap"></div>
+      <div class="shelf s2" data-shelf="fats">
+        <div class="callout">Fats, spreads &amp; oils</div>
+        <span class="badge">0</span>
+
+        <div class="controls" role="group">
+          <button class="control-btn dec" type="button">−</button>
+          <button class="control-btn inc" type="button">+</button>
+        </div>
+      </div>
+      <div class="gap"></div>
+      <div class="shelf s3" data-shelf="dairy">
+        <div class="callout">Milk, yogurt &amp; cheese</div>
+        <span class="badge">0</span>
+
+        <div class="controls" role="group">
+          <button class="control-btn dec" type="button">−</button>
+          <button class="control-btn inc" type="button">+</button>
+        </div>
+      </div>
+      <div class="shelf s4" data-shelf="meat">
+        <div class="callout">Meat, poultry, fish, eggs, beans &amp; nuts</div>
+        <span class="badge">0</span>
+
+        <div class="controls" role="group">
+          <button class="control-btn dec" type="button">−</button>
+          <button class="control-btn inc" type="button">+</button>
+        </div>
+      </div>
+      <div class="shelf s5" data-shelf="grains">
+        <div class="callout">
+          Wholemeal cereals &amp; breads, potatoes, pasta &amp; rice
+        </div>
+        <span class="badge">0</span>
+
+        <div class="controls" role="group">
+          <button class="control-btn dec" type="button">−</button>
+          <button class="control-btn inc" type="button">+</button>
+        </div>
+      </div>
+      <div class="shelf s6" data-shelf="vegFruit">
+        <div class="callout">Vegetables, salad &amp; fruit</div>
+        <span class="badge">0</span>
+
+        <div class="controls" role="group">
+          <button class="control-btn dec" type="button">−</button>
+          <button class="control-btn inc" type="button">+</button>
+        </div>
+      </div>
+    </main>
+    <section class="legend">
+      <ul class="legend__list">
+        <li class="legend__item">
+          <span class="legend__swatch legend__swatch--within"></span>
+          <span class="legend__label">Within range</span>
+        </li>
+        <li class="legend__item">
+          <span class="legend__swatch legend__swatch--below"></span>
+          <span class="legend__label">Below range</span>
+        </li>
+        <li class="legend__item">
+          <span class="legend__swatch legend__swatch--above"></span>
+          <span class="legend__label">Above range</span>
+        </li>
+      </ul>
+    </section>
+
+    <script src="app.js"></script>
+  </body>
+</html>
