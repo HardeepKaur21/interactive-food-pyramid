@@ -1,6 +1,6 @@
 # Interactive Food Pyramid
 
-This is a small web application I built for one of my university web development assignments.
+This is a small web application I built for one of my university's (CS230) web development assignments.
 
 The idea is to keep track of how many servings you've eaten from each level of the Irish Food Pyramid throughout the day. As you add or remove servings, the pyramid updates automatically and shows whether you're below, within, or above the recommended guidelines for your age group.
 
